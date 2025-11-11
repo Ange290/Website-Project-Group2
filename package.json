@@ -1,0 +1,25 @@
+{
+  "name": "website-project-group2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ange290/Website-Project-Group2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ange290/Website-Project-Group2/issues"
+  },
+  "homepage": "https://github.com/Ange290/Website-Project-Group2#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  }
+}
