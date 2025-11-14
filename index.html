@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
     <title>Website project template</title>
-</head>
-<script>
-    const loadComponents = (id, url) =>  {
-        fetch(url)
+  </head>
+  <script>
+    const loadComponents = (id, url) => {
+      fetch(url)
         .then((response) => response.text())
         .then((html) => {
-            document.getElementById(id).innerHTML = html;
+          document.getElementById(id).innerHTML = html;
         });
-    }
+      const script = document.createElement("script");
+      script.src = "index.js";
+      document.body.appendChild(script);
+    };
 
     window.onload = () => {
         loadComponents('header', 'src/sections/header.html');
