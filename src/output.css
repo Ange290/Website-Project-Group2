@@ -1,4 +1,6 @@
-*, ::before, ::after {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -52,7 +54,7 @@
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,25 +556,331 @@ video {
   display: none;
 }
 
-.bg-blue-950 {
+.visible{
+  visibility: visible;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.sticky{
+  position: sticky;
+}
+
+.left-10{
+  left: 2.5rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-20{
+  top: 5rem;
+}
+
+.top-16{
+  top: 4rem;
+}
+
+.top-\[10\]{
+  top: 10;
+}
+
+.top-\[10rem\]{
+  top: 10rem;
+}
+
+.top-\[8rem\]{
+  top: 8rem;
+}
+
+.top-\[6rem\]{
+  top: 6rem;
+}
+
+.left-\[2rem\]{
+  left: 2rem;
+}
+
+.left-\[1rem\]{
+  left: 1rem;
+}
+
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-7{
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-\[70rem\]{
+  height: 70rem;
+}
+
+.h-\[45rem\]{
+  height: 45rem;
+}
+
+.h-52{
+  height: 13rem;
+}
+
+.h-1{
+  height: 0.25rem;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
+.h-32{
+  height: 8rem;
+}
+
+.h-60{
+  height: 15rem;
+}
+
+.h-96{
+  height: 24rem;
+}
+
+.h-\[40rem\]{
+  height: 40rem;
+}
+
+.h-\[38rem\]{
+  height: 38rem;
+}
+
+.w-\[35rem\]{
+  width: 35rem;
+}
+
+.w-3{
+  width: 0.75rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-950{
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity, 1));
 }
 
-.text-3xl {
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pb-14{
+  padding-bottom: 3.5rem;
+}
+
+.font-outfit{
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.font-bold {
+.text-\[18px\]{
+  font-size: 18px;
+}
+
+.text-\[1\.13rem\]{
+  font-size: 1.13rem;
+}
+
+.font-bold{
   font-weight: 700;
 }
 
-.text-lime-600 {
+.font-medium{
+  font-weight: 500;
+}
+
+.text-lime-600{
   --tw-text-opacity: 1;
   color: rgb(101 163 13 / var(--tw-text-opacity, 1));
 }
 
-.underline {
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.underline{
   text-decoration-line: underline;
+}
+
+@media (min-width: 768px){
+  .md\:left-\[27rem\]{
+    left: 27rem;
+  }
+
+  .md\:right-10{
+    right: 2.5rem;
+  }
+
+  .md\:top-\[5rem\]{
+    top: 5rem;
+  }
+
+  .md\:top-\[8rem\]{
+    top: 8rem;
+  }
+
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:mr-\[10rem\]{
+    margin-right: 10rem;
+  }
+
+  .md\:h-\[-50rem\]{
+    height: -50rem;
+  }
+
+  .md\:w-64{
+    width: 16rem;
+  }
+
+  .md\:w-80{
+    width: 20rem;
+  }
+
+  .md\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:pl-12{
+    padding-left: 3rem;
+  }
+
+  .md\:text-\[2rem\]{
+    font-size: 2rem;
+  }
+
+  .md\:font-medium{
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:left-\[52rem\]{
+    left: 52rem;
+  }
+
+  .lg\:top-\[-40rem\]{
+    top: -40rem;
+  }
+
+  .lg\:top-\[-48rem\]{
+    top: -48rem;
+  }
+
+  .lg\:top-\[-42rem\]{
+    top: -42rem;
+  }
+
+  .lg\:top-\[-38rem\]{
+    top: -38rem;
+  }
+
+  .lg\:top-\[-32rem\]{
+    top: -32rem;
+  }
+
+  .lg\:top-\[-34rem\]{
+    top: -34rem;
+  }
+
+  .lg\:mx-10{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .lg\:mr-\[38rem\]{
+    margin-right: 38rem;
+  }
+
+  .lg\:h-\[40rem\]{
+    height: 40rem;
+  }
+
+  .lg\:w-\[22rem\]{
+    width: 22rem;
+  }
+
+  .lg\:w-\[24rem\]{
+    width: 24rem;
+  }
+
+  .lg\:gap-7{
+    gap: 1.75rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[18px\]{
+    font-size: 18px;
+  }
+
+  .lg\:font-medium{
+    font-weight: 500;
+  }
 }
