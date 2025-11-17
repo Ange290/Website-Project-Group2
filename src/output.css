@@ -556,12 +556,42 @@ video {
   display: none;
 }
 
-.visible{
-  visibility: visible;
+.container{
+  width: 100%;
 }
 
-.fixed{
-  position: fixed;
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.visible{
+  visibility: visible;
 }
 
 .absolute{
@@ -574,6 +604,10 @@ video {
 
 .sticky{
   position: sticky;
+}
+
+.inset-0{
+  inset: 0px;
 }
 
 .left-\[1rem\]{
@@ -600,12 +634,28 @@ video {
   top: 6rem;
 }
 
+.right-0{
+  right: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
 .z-0{
   z-index: 0;
 }
 
 .z-10{
   z-index: 10;
+}
+
+.-z-0{
+  z-index: 0;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .mx-5{
@@ -650,12 +700,48 @@ video {
   height: 38rem;
 }
 
+.h-\[100rem\]{
+  height: 100rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-32{
+  height: 8rem;
+}
+
+.h-\[120rem\]{
+  height: 120rem;
+}
+
+.h-\[98rem\]{
+  height: 98rem;
+}
+
+.h-\[99rem\]{
+  height: 99rem;
+}
+
+.h-\[96rem\]{
+  height: 96rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-auto{
+  width: auto;
 }
 
 .flex-col{
@@ -680,6 +766,16 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .px-20{
@@ -756,6 +852,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.leading-relaxed{
+  line-height: 1.625;
 }
 
 .text-\[\#00642d\]{
@@ -858,6 +958,10 @@ video {
     padding-right: 5rem;
   }
 
+  .md\:pb-36{
+    padding-bottom: 9rem;
+  }
+
   .md\:pl-12{
     padding-left: 3rem;
   }
@@ -942,8 +1046,24 @@ video {
     height: 40rem;
   }
 
+  .lg\:h-\[100rem\]{
+    height: 100rem;
+  }
+
+  .lg\:h-\[20px\]{
+    height: 20px;
+  }
+
   .lg\:w-\[24rem\]{
     width: 24rem;
+  }
+
+  .lg\:w-full{
+    width: 100%;
+  }
+
+  .lg\:w-\[20px\]{
+    width: 20px;
   }
 
   .lg\:justify-between{
@@ -963,6 +1083,10 @@ video {
   .lg\:object-cover{
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .lg\:pb-64{
+    padding-bottom: 16rem;
   }
 
   .lg\:text-right{
