@@ -572,49 +572,25 @@ video {
   position: sticky;
 }
 
-.left-10{
-  left: 2.5rem;
+.left-\[1rem\]{
+  left: 1rem;
 }
 
 .top-0{
   top: 0px;
 }
 
-.top-20{
-  top: 5rem;
-}
-
-.top-16{
-  top: 4rem;
-}
-
-.top-\[10\]{
-  top: 10;
-}
-
-.top-\[10rem\]{
-  top: 10rem;
-}
-
-.top-\[8rem\]{
-  top: 8rem;
+.top-10{
+  top: 2.5rem;
 }
 
 .top-\[6rem\]{
   top: 6rem;
 }
 
-.left-\[2rem\]{
-  left: 2rem;
-}
-
-.left-\[1rem\]{
-  left: 1rem;
-}
-
-.mx-6{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mx-7{
@@ -622,56 +598,28 @@ video {
   margin-right: 1.75rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
 
-.h-\[70rem\]{
-  height: 70rem;
+.hidden{
+  display: none;
 }
 
-.h-\[45rem\]{
-  height: 45rem;
-}
-
-.h-52{
-  height: 13rem;
-}
-
-.h-1{
-  height: 0.25rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-32{
-  height: 8rem;
-}
-
-.h-60{
-  height: 15rem;
-}
-
-.h-96{
-  height: 24rem;
-}
-
-.h-\[40rem\]{
-  height: 40rem;
+.h-1\.4{
+  height: 1.438rem;
 }
 
 .h-\[38rem\]{
   height: 38rem;
-}
-
-.w-\[35rem\]{
-  width: 35rem;
-}
-
-.w-3{
-  width: 0.75rem;
 }
 
 .w-10{
@@ -682,20 +630,24 @@ video {
   flex-direction: column;
 }
 
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-blue-950{
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 37 84 / var(--tw-bg-opacity, 1));
 }
 
 .px-20{
@@ -717,8 +669,20 @@ video {
   padding-bottom: 3.5rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .font-outfit{
   font-family: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-0\.9{
+  font-size: 0.938rem;
+}
+
+.text-2{
+  font-size: 2rem;
 }
 
 .text-2xl{
@@ -726,94 +690,26 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-\[18px\]{
-  font-size: 18px;
-}
-
 .text-\[1\.13rem\]{
   font-size: 1.13rem;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .font-medium{
   font-weight: 500;
 }
 
-.text-lime-600{
-  --tw-text-opacity: 1;
-  color: rgb(0 100 45 / var(--tw-text-opacity, 1));
+.font-semibold{
+  font-weight: 600;
 }
 
-@media (min-width: 768px) {
-  .md\:left-\[18rem\] {
-    left: 18rem;
-  }
-
-  .md\:left-\[17rem\] {
-    left: 17rem;
-  }
-
-  .md\:mx-9 {
-    margin-left: 2.25rem;
-    margin-right: 2.25rem;
-  }
-
-  .md\:mt-7 {
-    margin-top: 1.75rem;
-  }
-
-  .md\:h-\[37\.47175598144531\] {
-    height: 37.47175598144531;
-  }
-
-  .md\:h-\[45\.47175598144531\] {
-    height: 45.47175598144531;
-  }
-
-  .md\:h-\[2\.34rem\] {
-    height: 2.34rem;
-  }
-
-  .md\:h-\[2\.84rem\] {
-    height: 2.84rem;
-  }
-
-  .md\:w-\[63\.5390625\] {
-    width: 63.5390625;
-  }
-
-  .md\:w-\[3\.97rem\] {
-    width: 3.97rem;
-  }
-
-  .md\:text-\[1\.5rem\] {
-    font-size: 1.5rem;
-  }
-
-  .md\:text-\[48px\] {
-    font-size: 48px;
-  }
-
-  .md\:text-\[3rem\] {
-    font-size: 3rem;
-  }
+.text-secondary{
+  --tw-text-opacity: 1;
+  color: rgb(0 100 45 / var(--tw-text-opacity, 1));
 }
 
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.underline{
-  text-decoration-line: underline;
 }
 
 @media (min-width: 768px){
@@ -829,8 +725,9 @@ video {
     top: 5rem;
   }
 
-  .md\:top-\[8rem\]{
-    top: 8rem;
+  .md\:mx-9{
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
   }
 
   .md\:mx-auto{
@@ -842,8 +739,20 @@ video {
     margin-right: 10rem;
   }
 
+  .md\:mt-7{
+    margin-top: 1.75rem;
+  }
+
+  .md\:h-2\.3{
+    height: 2.344rem;
+  }
+
   .md\:h-\[-50rem\]{
     height: -50rem;
+  }
+
+  .md\:w-3\.9{
+    width: 3.97rem;
   }
 
   .md\:w-64{
@@ -863,6 +772,16 @@ video {
     padding-left: 3rem;
   }
 
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .md\:text-\[2rem\]{
     font-size: 2rem;
   }
@@ -873,32 +792,28 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:relative{
+    position: relative;
+  }
+
+  .lg\:left-0{
+    left: 0px;
+  }
+
   .lg\:left-\[52rem\]{
     left: 52rem;
   }
 
-  .lg\:top-\[-40rem\]{
-    top: -40rem;
-  }
-
-  .lg\:top-\[-48rem\]{
-    top: -48rem;
-  }
-
-  .lg\:top-\[-42rem\]{
-    top: -42rem;
-  }
-
-  .lg\:top-\[-38rem\]{
-    top: -38rem;
-  }
-
-  .lg\:top-\[-32rem\]{
-    top: -32rem;
+  .lg\:top-0{
+    top: 0px;
   }
 
   .lg\:top-\[-34rem\]{
     top: -34rem;
+  }
+
+  .lg\:top-\[-42rem\]{
+    top: -42rem;
   }
 
   .lg\:mx-10{
@@ -906,24 +821,56 @@ video {
     margin-right: 2.5rem;
   }
 
+  .lg\:mx-9{
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+  }
+
   .lg\:mr-\[38rem\]{
     margin-right: 38rem;
+  }
+
+  .lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
   }
 
   .lg\:h-\[40rem\]{
     height: 40rem;
   }
 
-  .lg\:w-\[22rem\]{
-    width: 22rem;
-  }
-
   .lg\:w-\[24rem\]{
     width: 24rem;
   }
 
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
   .lg\:gap-7{
     gap: 1.75rem;
+  }
+
+  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:text-right{
+    text-align: right;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-5xl{
@@ -937,5 +884,10 @@ video {
 
   .lg\:font-medium{
     font-weight: 500;
+  }
+
+  .lg\:text-black{
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   }
 }
