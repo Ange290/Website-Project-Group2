@@ -14,15 +14,18 @@ export default {
       fontSize: {
         0.9: "0.938rem",
         2: "2rem",
-        10: "10rem",
+        x: "160px",
         6.5: "6.5rem",
+        0.26: "4.16px",
         17: "17rem",
       },
       colors: {
         secondary: "#00642d",
       },
       height: {
-        1.4: "1.438rem",
+        1.4: "1.4rem",
+        1.8: "1.825rem",
+        2.8: "2.84rem",
         2.3: "2.344rem",
       },
       width: {
