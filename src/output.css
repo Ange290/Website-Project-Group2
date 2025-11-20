@@ -737,6 +737,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:left-72{
+    left: 18rem;
+  }
+
   .md\:left-80{
     left: 20rem;
   }
@@ -779,16 +783,12 @@ video {
     height: 2.344rem;
   }
 
-  .md\:h-\[-50rem\]{
-    height: -50rem;
-  }
-
-  .md\:h-\[2\.84rem\]{
-    height: 2.84rem;
-  }
-
   .md\:h-2\.8{
     height: 2.84rem;
+  }
+
+  .md\:h-\[-50rem\]{
+    height: -50rem;
   }
 
   .md\:w-3\.9{
