@@ -1,4 +1,6 @@
-<section>
+function creatHeader() {
+  const header = document.createElement("header");
+  header.innerHTML = `<section>
   <header
     class="font-outfitmt-12 md:mt-7 md:mx-9 lg:mt-5 lg:mx-9 mx-5 flex justify-between items-center lg:justify-between mt-10"
   >
@@ -19,7 +21,7 @@
     </div>
 
     <div
-      class="menuList text-2 hidden lg:block lg:text-2xl lg:relative lg:top-0 lg:left-0 absolute top-40 lg:space-y-0 space-y-3 left-28 md:left-80 text-center lg:text-right text-secondary lg:text-black font-semibold md:text-5xl md:space-y-10"
+      class="menuList text-2 hidden lg:block lg:text-2xl lg:relative lg:top-0 lg:left-0 absolute top-40 lg:space-y-0 space-y-3 left-28 md:left-72 text-center lg:text-right text-secondary lg:text-black font-semibold md:text-5xl md:space-y-10"
     >
       <p>About</p>
       <p>Services</p>
@@ -44,3 +46,17 @@
     </div>
   </header>
 </section>
+`;
+  return header;
+}
+document.body.prepend(creatHeader());
+
+const menu = document.querySelector(".menu");
+const closeMenu = document.querySelector(".close-menu");
+const menuLists = document.querySelector(".menuList");
+const toggle = () => {
+  [menu, closeMenu].forEach((element) => element.classList.toggle("hidden"));
+  menuLists.classList.toggle("hidden");
+};
+menu.addEventListener("click", toggle);
+closeMenu.addEventListener("click", toggle);
