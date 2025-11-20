@@ -1,57 +1,25 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  <head> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <link rel="stylesheet" href="output.css" /> 
-    <title>Agentur Baumeister Aligned</title> 
-  </head> 
-  <body class="bg-white m-0 p-0 w-full overflow-x-hidden"> 
-    <img 
-      class="pb-14 px-20 md:mx-auto mt-60" 
-      src="/src/assets/images/Vector 7.svg" 
-      alt="red for footer" 
-    /> 
-    <div 
-      class="font-outfit font-medium md:font-semibold md:text-xl w-full p-5 md:p-12 lg:px-16 lg:py-20 text-[#050505] text-base leading-snug" 
-    > 
-      <footer 
-        class="w-full grid grid-cols-2 md:grid-cols-12 gap-x-4 gap-y-8 md:gap-y-0 items-start" 
-      > 
-        <!-- Address -->
-        <div class="col-span-2 md:col-span-2">
-          <h3 class="mb-1">Agentur Baumeister</h3> 
-          <p>Böckhstraße 13</p> 
-          <p>10967 Berlin</p> 
-        </div> 
- 
-        <!-- Contact -->
-        <div class="col-span-2 md:col-span-4">
-          <a 
-            href="mailto:hallo@agentur-baumeister.com" 
-            class="block underline underline-offset-4 decoration-1 mb-1 whitespace-nowrap" 
-          > 
-            hallo@agentur-baumeister.com 
-          </a> 
-          <p>+49 (0)30 - 490 827 87</p> 
-        </div> 
- 
-        <!-- LinkedIn -->
-        <div class="col-span-1 md:col-span-2">
-          <a href="#" class="hover:opacity-70">LinkedIn</a> 
-        </div> 
- 
-        <!-- Instagram -->
-        <div class="col-span-1 md:col-span-2">
-          <a href="#" class="hover:opacity-70">Instagram</a> 
-        </div> 
- 
-        <!-- Legal Links -->
-        <div class="col-span-2 md:col-span-2 text-right">
-          <a href="#" class="block hover:opacity-70 mb-1">Impressum</a> 
-          <a href="#" class="block hover:opacity-70">Datenschutz</a> 
-        </div> 
-      </footer> 
-    </div> 
-  </body> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentur Baumeister</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-0 p-0 w-full overflow-x-hidden">
+    <div id="page-container" class="flex flex-col min-h-screen">
+      <div id="footer-target"></div>
+    </div>
+
+    <script src="footer.js"></script>
+
+    <script>
+      // Example 1: Default Theme (Black text, Beige bg)
+      renderFooter("footer-target", {
+        textColor: "text-[#050505]",
+        bgColor: "bg-[#f2f0ed]",
+        imageSrc: "/src/assets/images/Vector 7.svg",
+      });
+    </script>
+  </body>
 </html>
