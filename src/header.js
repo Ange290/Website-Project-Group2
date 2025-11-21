@@ -1,6 +1,6 @@
 function creatHeader() {
   const header = document.createElement("header");
-  header.innerHTML = `<section class="w-full fixed z-50">
+  header.innerHTML = `<section class="w-full fixed z-50 md:fixed md:z-50">
   <header
     class="font-outfitmt-12 md:mt-7 md:mx-9 lg:mt-5 lg:mx-9 mx-5 flex justify-between items-center lg:justify-between mt-10"
   >
@@ -12,7 +12,7 @@ function creatHeader() {
     <div>
       <img
         src="/src/assets/images/Vector 5.png"
-        class="relative ml-5"
+        class="relative ml-5 lg:hidden"
         alt="Baumeister Logo"
       />
       <p class="absolute top-10 md:top-9 lg:top-14 ml-9 font-semibold text-2">
