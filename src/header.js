@@ -1,6 +1,6 @@
 function creatHeader() {
   const header = document.createElement("header");
-  header.innerHTML = `<section>
+  header.innerHTML = `<section class="w-full fixed z-50">
   <header
     class="font-outfitmt-12 md:mt-7 md:mx-9 lg:mt-5 lg:mx-9 mx-5 flex justify-between items-center lg:justify-between mt-10"
   >
