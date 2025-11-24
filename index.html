@@ -16,11 +16,11 @@
     };
 
     window.onload = () => {
-      loadComponents("header", "src/sections/header.html");
       loadComponents("hero", "src/sections/hero.html");
       loadComponents("about", "src/sections/about.html");
       loadComponents("service", "src/sections/service.html");
       loadComponents("eventBanner", "src/sections/eventBanner.html");
+      loadComponents("footer", "src/sections/footer.html");
       // loadComponents('contact', 'src/sections/contact.html');
       // loadComponents('footer', 'src/sections/footer.html');
     };
@@ -29,7 +29,6 @@
   <body>
     <script src="/src/header.js"></script>
     <div id="hero"></div>
-    <div id="header"></div>
     <div id="about"></div>
     <div id="service"></div>
     <div id="eventBanner"></div>
@@ -37,7 +36,7 @@
     <div id="contact"></div>
 
      <div id="contact"></div>-->
-    <div id="footer"></div> 
-  </body>
+     <app-footer></app-footer>
+    <script src="/src/footer.js"></script> 
   </body>
 </html>
