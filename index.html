@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/output.css" />
-    <title>Website project template</title>
+    <title>Baumeister|Home</title>
   </head>
   <script>
     const loadComponents = (id, url) => {
@@ -13,26 +13,25 @@
         .then((html) => {
           document.getElementById(id).innerHTML = html;
         });
-      const script = document.createElement("script");
-      script.src = "index.js";
-      document.body.appendChild(script);
     };
 
     window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
-        loadComponents('about', 'src/sections/about.html');
-        loadComponents('service', 'src/sections/service.html');
-        // loadComponents('hero', 'src/sections/hero.html');
-        // loadComponents('contact', 'src/sections/contact.html');
-        // loadComponents('footer', 'src/sections/footer.html');
-    }
-</script>
-<body>
+      // loadComponents("header", "src/sections/header.html");
+      loadComponents("about", "src/sections/about.html");
+      loadComponents("service", "src/sections/service.html");
+      loadComponents("hero", "src/sections/hero.html");
+      // loadComponents("contact", "src/sections/contact.html");
+      // loadComponents("footer", "src/sections/footer.html");
+    };
+  </script>
+  <body>
+    <script src="/src/header.js"></script>
+    <div id="hero"></div>
     <div id="header"></div>
     <div id="about"></div>
     <div id="service"></div>
-    <!-- <div id="hero"></div>
-    <div id="contact"></div>
+
+    <!-- <div id="contact"></div>
     <div id="footer"></div> -->
-</body>
+  </body>
 </html>
