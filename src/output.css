@@ -600,6 +600,14 @@ video {
   top: 450px;
 }
 
+.left-\[1rem\]{
+  left: 1rem;
+}
+
+.top-\[6rem\]{
+  top: 6rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -623,6 +631,11 @@ video {
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.mx-7{
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
 }
 
 .-ml-28{
@@ -721,6 +734,10 @@ video {
   height: 360.5054626464844px;
 }
 
+.h-\[38rem\]{
+  height: 38rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -749,6 +766,10 @@ video {
   width: 100%;
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .items-center{
   align-items: center;
 }
@@ -761,6 +782,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .px-20{
@@ -811,8 +838,20 @@ video {
   line-height: 2rem;
 }
 
+.text-\[1\.13rem\]{
+  font-size: 1.13rem;
+}
+
 .font-semibold{
   font-weight: 600;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.leading-\[1\.1\]{
+  line-height: 1.1;
 }
 
 .text-secondary{
@@ -838,6 +877,26 @@ video {
     top: 2.25rem;
   }
 
+  .md\:left-\[24rem\]{
+    left: 24rem;
+  }
+
+  .md\:right-10{
+    right: 2.5rem;
+  }
+
+  .md\:top-\[8rem\]{
+    top: 8rem;
+  }
+
+  .md\:left-\[27rem\]{
+    left: 27rem;
+  }
+
+  .md\:top-\[5rem\]{
+    top: 5rem;
+  }
+
   .md\:z-20{
     z-index: 20;
   }
@@ -853,6 +912,11 @@ video {
   .md\:mx-9{
     margin-left: 2.25rem;
     margin-right: 2.25rem;
+  }
+
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:-ml-\[230px\]{
@@ -895,6 +959,10 @@ video {
     margin-top: 450px;
   }
 
+  .md\:mr-\[10rem\]{
+    margin-right: 10rem;
+  }
+
   .md\:hidden{
     display: none;
   }
@@ -931,6 +999,10 @@ video {
     height: 763.9452514648438px;
   }
 
+  .md\:h-\[-50rem\]{
+    height: -50rem;
+  }
+
   .md\:w-3\.9{
     width: 3.97rem;
   }
@@ -963,6 +1035,18 @@ video {
     width: 100%;
   }
 
+  .md\:w-\[18rem\]{
+    width: 18rem;
+  }
+
+  .md\:w-64{
+    width: 16rem;
+  }
+
+  .md\:w-80{
+    width: 20rem;
+  }
+
   .md\:space-y-10 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -974,6 +1058,10 @@ video {
     padding-right: 5rem;
   }
 
+  .md\:pl-12{
+    padding-left: 3rem;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -982,6 +1070,14 @@ video {
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-\[2rem\]{
+    font-size: 2rem;
+  }
+
+  .md\:font-medium{
+    font-weight: 500;
   }
 }
 
@@ -1006,6 +1102,26 @@ video {
     top: 3.5rem;
   }
 
+  .lg\:left-\[49\.4rem\]{
+    left: 49.4rem;
+  }
+
+  .lg\:top-\[-32rem\]{
+    top: -32rem;
+  }
+
+  .lg\:top-\[-42rem\]{
+    top: -42rem;
+  }
+
+  .lg\:left-\[52rem\]{
+    left: 52rem;
+  }
+
+  .lg\:top-\[-34rem\]{
+    top: -34rem;
+  }
+
   .lg\:z-40{
     z-index: 40;
   }
@@ -1013,6 +1129,11 @@ video {
   .lg\:mx-9{
     margin-left: 2.25rem;
     margin-right: 2.25rem;
+  }
+
+  .lg\:mx-10{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 
   .lg\:-ml-\[1045px\]{
@@ -1059,6 +1180,10 @@ video {
     margin-top: 90px;
   }
 
+  .lg\:mr-\[38rem\]{
+    margin-right: 38rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1091,6 +1216,10 @@ video {
     height: 873.4869995117188px;
   }
 
+  .lg\:h-\[40rem\]{
+    height: 40rem;
+  }
+
   .lg\:w-\[236px\]{
     width: 236px;
   }
@@ -1119,8 +1248,20 @@ video {
     width: 100%;
   }
 
+  .lg\:w-\[19rem\]{
+    width: 19rem;
+  }
+
+  .lg\:w-\[24rem\]{
+    width: 24rem;
+  }
+
   .lg\:justify-between{
     justify-content: space-between;
+  }
+
+  .lg\:gap-7{
+    gap: 1.75rem;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
@@ -1170,6 +1311,18 @@ video {
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-\[18px\]{
+    font-size: 18px;
+  }
+
+  .lg\:text-\[3rem\]{
+    font-size: 3rem;
+  }
+
+  .lg\:font-medium{
+    font-weight: 500;
   }
 
   .lg\:text-black{
