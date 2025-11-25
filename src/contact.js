@@ -55,7 +55,7 @@ bigDiv.appendChild(container);
 const container2 = document.createElement("div");
 container2.classList.add("font-outfit", "text-green-800", "py-10", "px-6","md:text-right");
 
-const headingDisclaimer = document.createElement("h1"); // Changed from heading2 to headingDisclaimer
+const headingDisclaimer = document.createElement("h1"); 
 headingDisclaimer.textContent = "DISCLAIMER";
 headingDisclaimer.classList.add("text-xl", "font-bold","pb-2");
 container2.appendChild(headingDisclaimer);
