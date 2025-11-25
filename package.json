@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "scripts": {
     "test": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
@@ -22,5 +21,8 @@
   "homepage": "https://github.com/Ange290/Website-Project-Group2#readme",
   "devDependencies": {
     "tailwindcss": "^3.4.18"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }
