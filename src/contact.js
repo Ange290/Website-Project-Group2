@@ -1,15 +1,16 @@
 const body = document.body;
+body.classList.add("md:px-8","lg:px-20");
 const header = document.createElement("header");
 header.classList.add("font-outfit", "text-green-800", "px-6", "pt-8");
 body.appendChild(header);
 
-//  small screens, hidden on medium and up
+//  small and large screens, hidden on medium 
 const heading = document.createElement("h1");
 heading.textContent = "IMPRINT";
 heading.classList.add("block", "text-2xl", "font-bold", "pb-2", "md:hidden","lg:block","lg:text-2xl");
 header.appendChild(heading);
 
-// Hidden on small screens, visible on medium and up
+// Hidden on small and large screens, visible on medium 
 const heading2 = document.createElement("h1");
 heading2.textContent = "IMPRESSUM";
 heading2.classList.add("hidden", "md:block", "md:text-xl", "font-bold", "pb-2","lg:hidden");
@@ -25,11 +26,11 @@ header.appendChild(p1);
 
 //flex
 const bigDiv = document.createElement("div");
-bigDiv.classList.add("grid", "grid-cols-1", "md:grid-cols-2", "lg:grid-cols-2", "lg:gap-x-20");
+bigDiv.classList.add("grid", "grid-cols-1", "md:grid-cols-2", "lg:grid-cols-3","lg:gap-x-20");
 
 //first div
 const container = document.createElement("div");
-container.classList.add("font-outfit", "text-green-800","pt-2","md:pt-10", "pb-8","px-6","md:text-left");
+container.classList.add("font-outfit", "text-green-800","pt-2","md:pt-10", "pb-8","px-6","md:text-left", "lg:col-span-2");
 
 const p2 = document.createElement("p");
 p2.innerHTML = `+49 (0)30 - 490 827 87<br>
