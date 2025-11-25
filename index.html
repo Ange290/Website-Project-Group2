@@ -4,35 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/output.css" />
-    <title>Website project template</title>
+    <title>Baumeister|Home</title>
+
+    <script src="src/partners.js"></script>
+    <script src="src/services.js"></script>
   </head>
+
   <script>
-    const loadComponents = (id, url) => {
+    const loadComponents = (id, url, callback) => {
       fetch(url)
         .then((response) => response.text())
         .then((html) => {
           document.getElementById(id).innerHTML = html;
-        });
-      const script = document.createElement("script");
-      script.src = "index.js";
-      document.body.appendChild(script);
+          if (callback) {
+            callback();
+          }
+        })
+        .catch((err) => console.error(err));
     };
 
     window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
-        loadComponents('about', 'src/sections/about.html');
-        loadComponents('service', 'src/sections/service.html');
-        // loadComponents('hero', 'src/sections/hero.html');
-        // loadComponents('contact', 'src/sections/contact.html');
-        // loadComponents('footer', 'src/sections/footer.html');
-    }
-</script>
-<body>
-    <div id="header"></div>
+      loadComponents("hero", "src/sections/hero.html");
+      loadComponents("about", "src/sections/about.html");
+      loadComponents("service", "src/sections/service.html", renderServices);
+
+      loadComponents(
+        "eventBanner",
+        "src/sections/eventBanner.html",
+        renderPartnerList
+      );
+
+      loadComponents("footer", "src/sections/footer.html");
+    };
+  </script>
+
+  <body>
+    <script src="/src/header.js"></script>
+    <div id="hero"></div>
     <div id="about"></div>
+
     <div id="service"></div>
-    <!-- <div id="hero"></div>
-    <div id="contact"></div>
-    <div id="footer"></div> -->
-</body>
+
+    <div id="eventBanner"></div>
+    <app-footer></app-footer>
+    <script src="/src/footer.js"></script>
+  </body>
 </html>
