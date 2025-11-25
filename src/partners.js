@@ -40,7 +40,7 @@ function renderPartnerList() {
     { name: "Lode & Stijn", url: "https://www.lode-stijn.de/" },
     { name: "Luya", url: "https://luya.bio/" },
     { name: "MEISSEN", url: "https://www.meissen.com/de/" },
-    { name: "MEISSEN IKONEN", url: "https://www.meissen.com/de/" }, // Used Meissen link here to keep order correct
+    { name: "MEISSEN IKONEN", url: "https://www.meissen.com/de/" }, 
     { name: "Motel Beer & Coffee", url: "https://www.motelminibar.com/" },
     { name: "PAPER & TEA", url: "https://www.paperandtea.de/" },
     { name: "rocket & basil", url: "https://www.rocketandbasil.com/" },
@@ -65,11 +65,11 @@ function renderPartnerList() {
       const li = document.createElement("li");
       const link = document.createElement("a");
 
-      // Use the URL from the object
+     
       link.href = partner.url;
       link.textContent = partner.name;
 
-      // Optional: Open in new tab so they don't leave your site
+      
       link.target = "_blank";
 
       li.appendChild(link);
