@@ -1119,9 +1119,8 @@ video {
     grid-column: span 1 / span 1;
   }
 
-  .lg\:mx-10{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+  .lg\:mt-5{
+    margin-top: 1.25rem;
   }
 
   .lg\:mx-9{
