@@ -7,16 +7,17 @@
     <title>Baumeister|References</title>
   </head>
   <body>
-    <main class="pt-40">
+    <main class="pt-40 text-2xl font-outfit text-secondary mx-6">
       <div>
-        <h1 id="header-1"></h1>
-        <h2 id="header-2"></h2>
+        <h1 id="header-1" class="font-semibold text-4xl pb-10 pt-16"></h1>
+        <h2 id="header-2" class="pb-5"></h2>
         <p id="intro"></p>
       </div>
       <div>
         <h2 id="content-header"></h2>
         <p id="iterms"></p>
       </div>
+      <footer id="footer"></footer>
     </main>
     <script src="./src/header.js"></script>
     <app-footer></app-footer>
@@ -151,7 +152,7 @@
               letter: "b",
               title: "Right of access",
               content:
-                "Each data subject shall have the right granted by the European legislator to obtain from the controller free information about his or her personal data stored at any time and a copy of this information. Furthermore, the European directives and regulations grant the data subject access to the following information: the purposes of the processing; the categories of personal data concerned; the recipients or categories of recipients to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations; where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period; the existence of the right to request from the controller rectification or erasure of personal data, or restriction of processing of personal data concerning the data subject, or to object to such processing; the existence of the right to lodge a complaint with a supervisory authority; where the personal data are not collected from the data subject, any available information as to their source; the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) of the GDPR and, at least in those cases, meaningful information about the logic involved, as well as the significance and envisaged consequences of such processing for the data subject. Furthermore, the data subject shall have a right to obtain information as to whether personal data are transferred to a third country or to an international organisation. Where this is the case, the data subject shall have the right to be informed of the appropriate safeguards relating to the transfer. If a data subject wishes to avail himself of this right of access, he or she may, at any time, contact any employee of the controller.",
+                "Each data subject shall have the right granted by the European legislator to obtain from the controller free information about his or her personal data stored at any time and a copy of this information. Furthermore, the European directives and regulations grant the data subject access to the following information: <ul style='list-style-type: disc;' class='ml-20'><li>the purposes of the processing;</li> <li>the categories of personal data concerned;</li> <li>the recipients or categories of recipients to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations;</li> <li'>where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period;</li> <li>the existence of the right to request from the controller rectification or erasure of personal data, or restriction of processing of personal data concerning the data subject, or to object to such processing;</li> <li>the existence of the right to lodge a complaint with a supervisory authority;</li> <li>where the personal data are not collected from the data subject, any available information as to their source;</li> <li>the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) of the GDPR and, at least in those cases, meaningful information about the logic involved, as well as the significance and envisaged consequences of such processing for the data subject.</li></ul> <ul style='list-style-type: disc;' class='ml-10'><li>Furthermore, the data subject shall have a right to obtain information as to whether personal data are transferred to a third country or to an international organisation. Where this is the case, the data subject shall have the right to be informed of the appropriate safeguards relating to the transfer. If a data subject wishes to avail himself of this right of access, he or she may, at any time, contact any employee of the controller.</li></ul>",
             },
             {
               letter: "c",
@@ -263,10 +264,47 @@
     const header2 = document.getElementById("header-2");
     header2.innerHTML = privacyData.subTitle;
     const intro = document.getElementById("intro");
-    intro.innerHTML = privacyData.intro;
-    const content = document.getElementById("content-header");
-    const terms = document.getElementById("terms");
-    const data = privacyData.sections;
-    console.log(data[0]);
+
+    intro.innerHTML = privacyData.intro.map((elem) => elem + "<br/>").join("");
+
+    const contentHeader = document.getElementById("content-header");
+    const iterms = document.getElementById("iterms");
+    const footer = document.getElementById("footer");
+
+    // Generate content from sections
+    let sectionsHTML = "";
+    privacyData.sections.forEach((section) => {
+      sectionsHTML += `<div class="section">`;
+      sectionsHTML += `<h3 class="pt-10">${section.number}. ${section.title}</h3>`;
+
+      if (Array.isArray(section.content)) {
+        section.content.forEach((paragraph) => {
+          sectionsHTML += `<p>${paragraph}</p>`;
+        });
+      } else if (typeof section.content === "string") {
+        sectionsHTML += `<p>${section.content}</p>`;
+      }
+
+      if (section.contactInfo) {
+        sectionsHTML += `<p class="py-10">${section.contactInfo.name}<br>`;
+        sectionsHTML += `${section.contactInfo.address}<br>`;
+        sectionsHTML += `${section.contactInfo.city}<br>`;
+        sectionsHTML += `${section.contactInfo.country}<br> </p>`;
+        sectionsHTML += `<p>${section.contactInfo.phone}<br>`;
+        sectionsHTML += `${section.contactInfo.email}<br>`;
+        sectionsHTML += `${section.contactInfo.website}</p>`;
+      }
+
+      if (section.subsections) {
+        section.subsections.forEach((subsection) => {
+          sectionsHTML += `<li class="ml-10">${subsection.letter}) ${subsection.title}</li>`;
+          sectionsHTML += `<p class="ml-10">${subsection.content}</p>`;
+        });
+      }
+
+      sectionsHTML += `</div>`;
+    });
+    iterms.innerHTML = sectionsHTML;
+    footer.innerHTML = `<p>${privacyData.footer}</p>`;
   </script>
 </html>
