@@ -4,7 +4,7 @@ class AgenturFooter extends HTMLElement {
       <div class="mt-[60rem] font-outfit w-full p-3 md:mt-[70rem] lg:mt-20 md:p-6 lg:p-8 text-[#050505] text-base leading-snug">
         
         <img
-            class="pb-14 px-20 md:mx-auto lg:pt-[20rem]"
+            class="pb-14 px-20 md:mx-auto lg:pt-[20rem] hidden md:block lg:block"
             src="/src/assets/images/Vector 7.svg"
             alt="red for footer"
         />

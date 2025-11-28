@@ -49,7 +49,7 @@ function creatHeader() {
 
       <p>Services</p>
 
-      <p>References</p>
+      <p id="references">References</p>
 
       <p>Contact</p>
 
@@ -103,3 +103,7 @@ const toggle = () => {
 };
 menu.addEventListener("click", toggle);
 closeMenu.addEventListener("click", toggle);
+const references = document.getElementById("references");
+references.addEventListener("click", () => {
+  window.location.href = "references.html";
+});
