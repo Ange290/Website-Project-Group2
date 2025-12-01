@@ -4,8 +4,8 @@ function createHeader() {
     <div class="mobile-menu hidden lg:hidden fixed inset-0 z-40">
       <div class="font-outfit flex flex-col items-center justify-start pt-28 space-y-12 text-4xl md:text-6xl font-semibold text-[#00672E]">
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="references.html">References</a>
+        <a href="#service">Services</a>
+        <a href="/src/sections/references.html">References</a>
         <a href="/src/sections/contact.html">Contact</a>
       </div>
     </div>
@@ -27,8 +27,8 @@ function createHeader() {
 
         <div class="menuList hidden lg:flex lg:flex-col lg:items-end lg:text-lg xl:text-xl font-medium z-50">
           <a href="#about" class="text-black font-medium hover:opacity-70 transition-opacity">About</a>
-          <a href="#services" class="text-black font-medium hover:opacity-70 transition-opacity">Services</a>
-          <a href="references.html" class="text-black font-medium hover:opacity-70 transition-opacity">References</a>
+          <a href="#service" class="text-black font-medium hover:opacity-70 transition-opacity">Services</a>
+          <a href="/src/sections/references.html" class="text-black font-medium hover:opacity-70 transition-opacity">References</a>
           <a href="/src/sections/contact.html" class="text-black font-medium hover:opacity-70 transition-opacity">Contact</a>
         </div>
 

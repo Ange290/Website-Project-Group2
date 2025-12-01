@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +26,6 @@
     window.onload = () => {
       loadComponents("hero", "src/sections/hero.html");
       loadComponents("about", "src/sections/about.html");
-      loadComponents("contact", "src/sections/contact.html");
 
       // UPDATE THIS LINE: Pass 'renderServices' as the 3rd argument
       loadComponents("service", "src/sections/service.html", renderServices);
@@ -42,7 +41,7 @@
   </script>
 
   <body>
-    <!-- <script src="/src/header.js"></script>
+    <script src="/src/header.js"></script>
     <div id="hero"></div>
     <div id="about"></div>
     <img
@@ -54,11 +53,6 @@
 
     <div id="eventBanner"></div>
     <app-footer></app-footer>
-    <script src="/src/footer.js"></script> -->
-    <script src="/src/headerGreen.js"></script>
-    <div id="contact-root"></div>
-    <app-footer-green></app-footer-green>
-    <script src="/src/contact.js"></script>
-    <script src="/src/footerGreen.js"></script>
+    <script src="/src/footer.js"></script>
   </body>
 </html>

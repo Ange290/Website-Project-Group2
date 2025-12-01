@@ -3,9 +3,9 @@ function createHeader() {
   header.innerHTML = `
     <div class="mobile-menu hidden lg:hidden fixed inset-0 z-40">
       <div class="font-outfit flex flex-col items-center justify-start pt-28 space-y-12 text-4xl md:text-6xl font-semibold text-[#00672E]">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#references">References</a>
+        <a href="/index.html#about">About</a>
+        <a href="/index.html#service">Services</a>
+        <a href="/src/sections/references.html">References</a>
         <a href="/src/sections/contact.html">Contact</a>
       </div>
     </div>
@@ -26,9 +26,9 @@ function createHeader() {
         </div>
 
         <div class="menuList hidden lg:flex lg:flex-col lg:items-end lg:text-lg xl:text-xl font-medium z-50">
-          <a href="#about" class="text-green-800 font-medium hover:opacity-70 transition-opacity">About</a>
-          <a href="#services" class="text-green-800 font-medium hover:opacity-70 transition-opacity">Services</a>
-          <a href="#references" class="text-green-800 font-medium hover:opacity-70 transition-opacity">References</a>
+          <a href="/index.html#about" class="text-green-800 font-medium hover:opacity-70 transition-opacity">About</a>
+          <a href="/index.html#services" class="text-green-800 font-medium hover:opacity-70 transition-opacity">Services</a>
+          <a href="/src/sections/references.html" class="text-green-800 font-medium hover:opacity-70 transition-opacity">References</a>
           <a href="/src/sections/contact.html" class="text-green-800 font-medium hover:opacity-70 transition-opacity">Contact</a>
         </div>
 
