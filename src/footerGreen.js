@@ -1,17 +1,17 @@
-class AgenturFooter extends HTMLElement {
+class AgenturGreenFooter extends HTMLElement {
   connectedCallback() {
     const textColorClass =
-      this.getAttribute("data-text-color") || "text-[#050505]";
+      this.getAttribute("data-text-color") || "text-green-800";
     this.innerHTML = `
-            <div class="mt-[60rem] font-outfit w-full p-3 md:mt-[70rem] lg:mt-20 md:p-6 lg:p-8 ${textColorClass} text-base leading-snug">
+            <div class="font-outfit w-full p-3 md:p-6 lg:p-8 ${textColorClass} text-base leading-snug">
         
         <img
-            class="pb-14 px-20 md:mx-auto lg:pt-[20rem]"
+            class=" hidden  md:block pb-14 px-20 md:mx-auto"
             src="/src/assets/images/Vector 7.svg"
             alt="red for footer"
         />
 
-        <footer class="w-full grid grid-cols-4 lg:grid-cols-5 gap-y-4 md:gap-y-6 lg:gap-y-0 items-end lg:items-start">
+        <footer class="w-full pt-36 grid grid-cols-4 lg:grid-cols-5 gap-y-4 md:gap-y-6 lg:gap-y-0 items-end lg:items-start">
             
             <div class="col-span-4 md:col-span-2 lg:col-span-1 order-1 justify-self-start text-left mb-10 md:mb-0 md:self-start">
                 <h3 class="font-bold text-lg mb-1">Agentur Baumeister</h3>
@@ -49,4 +49,4 @@ class AgenturFooter extends HTMLElement {
   }
 }
 
-customElements.define("app-footer", AgenturFooter);
+customElements.define("app-footer-green", AgenturGreenFooter);
