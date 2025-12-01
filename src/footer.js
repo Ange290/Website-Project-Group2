@@ -1,7 +1,9 @@
 class AgenturFooter extends HTMLElement {
   connectedCallback() {
+    const textColorClass =
+      this.getAttribute("data-text-color") || "text-[#050505]";
     this.innerHTML = `
-      <div class="mt-[60rem] font-outfit w-full p-3 md:mt-[70rem] lg:mt-20 md:p-6 lg:p-8 text-[#050505] text-base leading-snug">
+            <div class="mt-[60rem] font-outfit w-full p-3 md:mt-[70rem] lg:mt-20 md:p-6 lg:p-8 ${textColorClass} text-base leading-snug">
         
         <img
             class="pb-14 px-20 md:mx-auto lg:pt-[20rem] hidden md:block lg:block"

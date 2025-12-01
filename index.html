@@ -26,6 +26,7 @@
     window.onload = () => {
       loadComponents("hero", "src/sections/hero.html");
       loadComponents("about", "src/sections/about.html");
+      loadComponents("contact", "src/sections/contact.html");
 
       // UPDATE THIS LINE: Pass 'renderServices' as the 3rd argument
       loadComponents("service", "src/sections/service.html", renderServices);
@@ -41,14 +42,23 @@
   </script>
 
   <body>
-    <script src="/src/header.js"></script>
+    <!-- <script src="/src/header.js"></script>
     <div id="hero"></div>
     <div id="about"></div>
-
+    <img
+      class="sticky top-0 pb-14 px-20 md:mx-auto -z-10 pointer-events-none"
+      src="/src/assets/Vector 12.png"
+      alt="yellow decorative shape"
+    />
     <div id="service"></div>
 
     <div id="eventBanner"></div>
     <app-footer></app-footer>
-    <script src="/src/footer.js"></script>
+    <script src="/src/footer.js"></script> -->
+    <script src="/src/headerGreen.js"></script>
+    <div id="contact-root"></div>
+    <app-footer-green></app-footer-green>
+    <script src="/src/contact.js"></script>
+    <script src="/src/footerGreen.js"></script>
   </body>
 </html>
