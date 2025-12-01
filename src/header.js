@@ -1,105 +1,73 @@
-function creatHeader() {
+function createHeader() {
   const header = document.createElement("header");
-  header.innerHTML = `<section class=" font-outfit w-full fixed z-50 md:fixed md:z-50">
-  <header
-
-    class="font-outfitmt-12 md:mt-7 md:mx-9 lg:mt-5 lg:mx-9 mx-5 flex justify-between items-center lg:justify-between mt-10"
-
-  >
-
-    <div class="text-0.9 md:text-2xl block lg:pt-3">
-
-      <p>DE</p>
-
-      <p>EN</p>
-
-    </div>
-
-
-
-    <div>
-
-      <img
-
-        src="/src/assets/images/Vector 5.png"
-
-        class="relative ml-5 lg:hidden"
-
-        alt="Baumeister Logo"
-
-      />
-
-      <p class="absolute top-10 md:top-9 lg:top-14 lg:left-[31rem] ml-9 font-semibold text-2 lg:2rem">
-
-        Baumeister
-
-      </p>
-
-    </div>
-
-
-
-    <div
-
-      class="menuList text-2 hidden lg:block lg:text-2xl lg:relative lg:top-0 lg:left-0 absolute top-40 space-y-3 left-28 md:left-72 text-center lg:text-right text-secondary lg:text-black md:text-5xl md:space-y-10 lg:space-y-0"
-
-    >
-
-      <p>About</p>
-
-      <p>Services</p>
-
-      <p>References</p>
-
-      <p>Contact</p>
-
-    </div>
-
-    <div class="lg:hidden">
-
-      <div class="menu">
-
-        <img
-
-          src="/src/assets/images/Menu button.png"
-
-          alt="Humburger Menu Button"
-
-          class="w-10 h-1.4 md:w-3.9 md:h-2.3"
-
-        />
-
+  header.innerHTML = `
+    <div class="mobile-menu hidden lg:hidden fixed inset-0 z-40">
+      <div class="font-outfit flex flex-col items-center justify-start pt-28 space-y-12 text-4xl md:text-6xl font-semibold text-[#00672E]">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="">References</a>
+        <a href="/src/sections/contact.html">Contact</a>
       </div>
-
-      <div class="close-menu hidden relative bottom-1">
-
-        <img
-
-          src="/src/assets/images/Close Button.png"
-
-          alt="Close Menu Button"
-
-          class="w-10 h-1.8 md:w-3.9 md:h-2.8"
-
-        />
-
-      </div>
-
     </div>
 
-  </header>
-</section>
-`;
+    <nav class="font-outfit w-full fixed top-0 left-0 z-50 bg-transparent">
+      <div class="relative flex justify-between items-center px-5 pt-5 md:px-9 md:pt-5 lg:items-start lg:px-12 lg:pt-4">
+        <div class="text-sm md:text-base lg:text-lg font-medium z-50">
+          <p class="cursor-pointer hover:opacity-70 leading-tight">DE</p>
+          <p class="cursor-pointer hover:opacity-70 leading-tight">EN</p>
+        </div>
+
+        <div class="lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:top-7 z-50">
+          <div class="relative lg:hidden">
+            <img src="/src/assets/images/Vector 5.png" class="w-40 md:w-52" alt="Baumeister Logo Background" />
+            <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-semibold text-xl md:text-2xl whitespace-nowrap">Baumeister</p>
+          </div>
+          <p class="hidden lg:block font-semibold text-4xl xl:text-5xl whitespace-nowrap">Baumeister</p>
+        </div>
+
+        <div class="menuList hidden lg:flex lg:flex-col lg:items-end lg:text-lg xl:text-xl font-medium z-50">
+          <a href="#about" class="text-black font-medium hover:opacity-70 transition-opacity">About</a>
+          <a href="#services" class="text-black font-medium hover:opacity-70 transition-opacity">Services</a>
+          <a href="#references" class="text-black font-medium hover:opacity-70 transition-opacity">References</a>
+          <a href="/src/sections/contact.html" class="text-black font-medium hover:opacity-70 transition-opacity">Contact</a>
+        </div>
+
+        <div class="lg:hidden z-50 flex items-center">
+          <div class="menu-btn cursor-pointer">
+            <img src="/src/assets/images/Menu button.png" alt="Menu" class="w-10 h-auto md:w-12" />
+          </div>
+          <div class="close-btn hidden cursor-pointer ml-2">
+            <img src="/src/assets/images/Close Button.png" alt="Close" class="w-10 h-auto md:w-12" onerror="this.style.display='none'" />
+          </div>
+        </div>
+      </div>
+    </nav>
+  `;
   return header;
 }
-document.body.prepend(creatHeader());
 
-const menu = document.querySelector(".menu");
-const closeMenu = document.querySelector(".close-menu");
-const menuLists = document.querySelector(".menuList");
-const toggle = () => {
-  [menu, closeMenu].forEach((element) => element.classList.toggle("hidden"));
-  menuLists.classList.toggle("hidden");
-};
-menu.addEventListener("click", toggle);
-closeMenu.addEventListener("click", toggle);
+document.body.prepend(createHeader());
+
+const menuBtn = document.querySelector(".menu-btn");
+const closeBtn = document.querySelector(".close-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+function toggleMenu() {
+  if (!menuBtn || !closeBtn || !mobileMenu) return;
+  menuBtn.classList.toggle("hidden");
+  closeBtn.classList.toggle("hidden");
+  mobileMenu.classList.toggle("hidden");
+  if (!mobileMenu.classList.contains("hidden")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+}
+
+menuBtn.addEventListener("click", toggleMenu);
+closeBtn.addEventListener("click", toggleMenu);
+
+const mobileLinks = mobileMenu.querySelectorAll("a");
+for (let i = 0; i < mobileLinks.length; i++) {
+  mobileLinks[i].addEventListener("click", toggleMenu);
+}
