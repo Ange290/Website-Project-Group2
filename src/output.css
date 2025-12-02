@@ -706,19 +706,9 @@ video {
   grid-column: span 4 / span 4;
 }
 
-.mx-6{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
 .mx-7{
   margin-left: 1.75rem;
   margin-right: 1.75rem;
-}
-
-.mx-10{
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
 .mx-8{
@@ -896,10 +886,6 @@ video {
   cursor: pointer;
 }
 
-.-scroll-m-2{
-  scroll-margin: -0.5rem;
-}
-
 .list-none{
   list-style-type: none;
 }
@@ -960,10 +946,6 @@ video {
   justify-self: start;
 }
 
-.scroll-auto{
-  scroll-behavior: auto;
-}
-
 .scroll-smooth{
   scroll-behavior: smooth;
 }
@@ -1013,6 +995,11 @@ video {
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-10{
@@ -1242,14 +1229,14 @@ video {
     grid-column: span 2 / span 2;
   }
 
-  .md\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:mx-20{
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:-ml-\[230px\]{
@@ -1262,6 +1249,10 @@ video {
 
   .md\:-ml-\[323px\]{
     margin-left: -323px;
+  }
+
+  .md\:-ml-\[350px\]{
+    margin-left: -350px;
   }
 
   .md\:-ml-\[630px\]{
@@ -1302,34 +1293,6 @@ video {
 
   .md\:mt-\[70rem\]{
     margin-top: 70rem;
-  }
-
-  .md\:-ml-\[310px\]{
-    margin-left: -310px;
-  }
-
-  .md\:-ml-\[300px\]{
-    margin-left: -300px;
-  }
-
-  .md\:-ml-\[280px\]{
-    margin-left: -280px;
-  }
-
-  .md\:-ml-\[260px\]{
-    margin-left: -260px;
-  }
-
-  .md\:-ml-\[320px\]{
-    margin-left: -320px;
-  }
-
-  .md\:-ml-\[330px\]{
-    margin-left: -330px;
-  }
-
-  .md\:-ml-\[350px\]{
-    margin-left: -350px;
   }
 
   .md\:block{
@@ -1388,8 +1351,8 @@ video {
     width: 206.4038543701172px;
   }
 
-  .md\:w-\[355\.0845642089844px\]{
-    width: 355.0845642089844px;
+  .md\:w-\[420px\]{
+    width: 420px;
   }
 
   .md\:w-\[458\.2864990234375px\]{
@@ -1410,30 +1373,6 @@ video {
 
   .md\:w-full{
     width: 100%;
-  }
-
-  .md\:w-\[359px\]{
-    width: 359px;
-  }
-
-  .md\:w-\[370px\]{
-    width: 370px;
-  }
-
-  .md\:w-\[390px\]{
-    width: 390px;
-  }
-
-  .md\:w-\[0px\]{
-    width: 0px;
-  }
-
-  .md\:w-\[410px\]{
-    width: 410px;
-  }
-
-  .md\:w-\[420px\]{
-    width: 420px;
   }
 
   .md\:grid-cols-2{
@@ -1823,6 +1762,11 @@ video {
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .lg\:pb-16{
