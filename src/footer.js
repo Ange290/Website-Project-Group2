@@ -1,12 +1,23 @@
 class AgenturFooter extends HTMLElement {
   connectedCallback() {
-    const textColorClass =
-      this.getAttribute("data-text-color") || "text-[#050505]";
+    const theme = this.getAttribute("theme");
+    const isGreen = theme === "green";
+
+    const textColorClass = isGreen ? "text-green-800" : "text-[#050505]";
+    
+    const containerSpacing = isGreen 
+      ? "pt-36" 
+      : "mt-[60rem] md:mt-[70rem] lg:mt-20";
+
+    const imageClasses = isGreen
+      ? "hidden md:block pb-14 px-20 md:mx-auto"
+      : "pb-14 px-20 md:mx-auto lg:pt-[20rem] md:block lg:block";
+
     this.innerHTML = `
-            <div class="mt-[60rem] font-outfit w-full p-3 md:mt-[70rem] lg:mt-20 md:p-6 lg:p-8 ${textColorClass} text-base leading-snug">
+      <div class="font-outfit w-full p-3 md:p-6 lg:p-8 ${textColorClass} ${containerSpacing} text-base leading-snug">
         
         <img
-            class="pb-14 px-20 md:mx-auto lg:pt-[20rem] md:block lg:block"
+            class="${imageClasses}"
             src="/src/assets/images/Vector 7.svg"
             alt="red for footer"
         />
