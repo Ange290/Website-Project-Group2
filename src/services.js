@@ -11,19 +11,16 @@ function renderServices() {
   const container = document.getElementById("service-list");
 
   if (container) {
-    container.innerHTML = ""; // Clear it first just in case
+    container.innerHTML = "";
 
     services.forEach((serviceName) => {
-      // Create the <p> tag
       const p = document.createElement("p");
 
-      // Add the text
       p.textContent = serviceName;
 
-      // Put the <p> inside the container
       container.appendChild(p);
     });
-    console.log("Services loaded successfully");
+
   } else {
     console.error("Error: Could not find #service-list in the HTML.");
   }
