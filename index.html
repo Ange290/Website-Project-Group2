@@ -1,38 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/output.css" />
-    <title>Website project template</title>
-  </head>
-  <script>
-    const loadComponents = (id, url) => {
-      fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById(id).innerHTML = html;
-        });
-      const script = document.createElement("script");
-      script.src = "index.js";
-      document.body.appendChild(script);
-    };
+    <title>Baumeister|Home</title>
 
-    window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
-        loadComponents('about', 'src/sections/about.html');
-        loadComponents('service', 'src/sections/service.html');
-        // loadComponents('hero', 'src/sections/hero.html');
-        // loadComponents('contact', 'src/sections/contact.html');
-        // loadComponents('footer', 'src/sections/footer.html');
-    }
-</script>
-<body>
-    <div id="header"></div>
+    <script src="src/partners.js"></script>
+    <script src="src/services.js"></script>
+    <script src="src/main.js"></script>
+  </head>
+
+  <body>
+    <script src="/src/header.js"></script>
+    <div id="hero"></div>
     <div id="about"></div>
+    <img
+      class="sticky top-0 pb-14 px-20 mx-auto block -z-10 pointer-events-none"
+      src="/src/assets/Vector 12.png"
+      alt="yellow decorative shape"
+    />
     <div id="service"></div>
-    <!-- <div id="hero"></div>
-    <div id="contact"></div>
-    <div id="footer"></div> -->
-</body>
+
+    <div id="eventBanner"></div>
+    <app-footer></app-footer>
+    <script src="/src/footer.js"></script>
+  </body>
 </html>
