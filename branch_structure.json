@@ -1,0 +1,33 @@
+{
+  "default_branch": "dev",
+  "branches": [
+    "dev",
+    "feature/final-wrap-up",
+    "ft/aboutus",
+    "ft/contact-page",
+    "ft/data-privacy",
+    "ft/footer",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "dev": null,
+    "feature/final-wrap-up": "dev",
+    "ft/aboutus": "dev",
+    "ft/contact-page": "dev",
+    "ft/data-privacy": "dev",
+    "ft/footer": "dev",
+    "main": "dev",
+    "origin": "dev"
+  },
+  "order": [
+    "dev",
+    "feature/final-wrap-up",
+    "ft/aboutus",
+    "ft/contact-page",
+    "ft/data-privacy",
+    "ft/footer",
+    "main",
+    "origin"
+  ]
+}
